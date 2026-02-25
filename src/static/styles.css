@@ -74,6 +74,40 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* participants list styling */
+.participants-list {
+  margin-left: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.activity-card .participants-list li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-card .participants-list li .remove {
+  cursor: pointer;
+  color: #c62828;
+  margin-left: 8px;
+}
+
+.activity-card .participants-list li .remove:hover {
+  color: #b71c1c;
+  transform: scale(1.1);
+}
+
+.no-participants {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #888;
+  margin-left: 1rem;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -109,7 +143,7 @@ button:hover {
 }
 
 .message {
-  margin-top: 20px;
+  margin-top: 1.5rem; /* more space above message to separate from form */
   padding: 10px;
   border-radius: 4px;
 }
